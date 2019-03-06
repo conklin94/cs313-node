@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mail Form</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+  </head>
+  <body class='mail'>
+    <h1>Calculate Your Postage</h1>
+    <form action="/postage" method="get">
+      Weight in ounces (rounded up):<br>
+      <input type="number" name="weight" min="1" max="13"><br>
+      Type of mail:<br>
+      <select name="type">
+        <option value="Letters (Stamped)">Letters (Stamped)</option>
+        <option value="Letters (Metered)">Letters (Metered)</option>
+        <option value="Large Envelope (Flats)">Large Envelope (Flats)</option>
+        <option value="First-Class Package--Retail">First-Class Package--Retail
+        </option>
+      </select>
+      <input type="submit" value="Submit">
+    </form>
+    <a href="/">Go Home</a>
+  </body>
+</html>
